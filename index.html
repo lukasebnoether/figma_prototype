@@ -2,27 +2,29 @@
 <html lang="en">
 <head>
 
-    <script>
-        (function (m, a, z, e) {
-          var s, t;
-          try {
-            t = m.sessionStorage.getItem('maze-us');
-          } catch (err) {}
-        
-          if (!t) {
-            t = new Date().getTime();
-            try {
-              m.sessionStorage.setItem('maze-us', t);
-            } catch (err) {}
-          }
-        
-          s = a.createElement('script');
-          s.src = z + '?apiKey=' + e;
-          s.async = true;
-          a.getElementsByTagName('head')[0].appendChild(s);
-          m.mazeUniversalSnippetApiKey = e;
-        })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', 'bb52a774-8974-4409-b5fa-59716e2b473e');
-        </script>
+<!-- Hotjar Tracking Code for MRT-Test -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:5194559,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- Install this snippet AFTER the Hotjar Tracking code. -->
+<script>
+    var userId = your_user_id || null; // Replace your_user_id with your own if available.
+    window.hj('identify', userId, {
+        // Add your own custom attributes here. Some EXAMPLES:
+        // 'Signed up': '2019—06-20Z', // Signup date in ISO-8601 format.
+        // 'Last purchase category': 'Electronics', // Send strings with quotes around them.
+        // 'Total purchases': 15, // Send numbers without quotes.
+        // 'Last purchase date': '2019-06-20Z', // Send dates in ISO-8601 format.
+        // 'Last refund date': null, // Send null when no value exists for a user.
+    });
+    </script>
 
         
     <meta charset="UTF-8">
@@ -46,6 +48,6 @@
     </style>
 </head>
 <body>
-    <iframe src="https://embed.figma.com/proto/n2dpvwK6Sw0rasFg7upytP/MRT---Layout-01---iPhone-16-Plus?page-id=191%3A6139&node-id=191-6140&node-type=frame&viewport=586%2C482%2C0.37&scaling=contain&content-scaling=fixed&starting-point-node-id=191%3A6140&embed-host=share" ></iframe>
+    <iframe src="https://embed.figma.com/proto/n2dpvwK6Sw0rasFg7upytP/MRT---Layout-01---iPhone-16-Plus?page-id=191%3A6139&node-id=191-6140&node-type=frame&viewport=586%2C482%2C0.37&scaling=contain&content-scaling=fixed&starting-point-node-id=191%3A6140&embed-host=share" data-hj-allow-iframe="true"></iframe>
 </body>
 </html>
