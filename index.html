@@ -2,13 +2,28 @@
 <html lang="en">
 <head>
 
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "otan2lf4vr");
-    </script>
+    <script>
+        (function (m, a, z, e) {
+          var s, t;
+          try {
+            t = m.sessionStorage.getItem('maze-us');
+          } catch (err) {}
+        
+          if (!t) {
+            t = new Date().getTime();
+            try {
+              m.sessionStorage.setItem('maze-us', t);
+            } catch (err) {}
+          }
+        
+          s = a.createElement('script');
+          s.src = z + '?apiKey=' + e;
+          s.async = true;
+          a.getElementsByTagName('head')[0].appendChild(s);
+          m.mazeUniversalSnippetApiKey = e;
+        })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', 'bb52a774-8974-4409-b5fa-59716e2b473e');
+        </script>
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,6 +46,6 @@
     </style>
 </head>
 <body>
-    <iframe src="https://embed.figma.com/proto/n2dpvwK6Sw0rasFg7upytP/MRT---Layout-01---iPhone-16-Plus?page-id=191%3A6139&node-id=191-6140&node-type=frame&viewport=586%2C482%2C0.37&scaling=contain&content-scaling=fixed&starting-point-node-id=191%3A6140&embed-host=share"  ></iframe>
+    <iframe src="https://embed.figma.com/proto/n2dpvwK6Sw0rasFg7upytP/MRT---Layout-01---iPhone-16-Plus?page-id=191%3A6139&node-id=191-6140&node-type=frame&viewport=586%2C482%2C0.37&scaling=contain&content-scaling=fixed&starting-point-node-id=191%3A6140&embed-host=share" ></iframe>
 </body>
 </html>
